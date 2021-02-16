@@ -6,5 +6,5 @@ use Alfred\Workflows\Workflow;
 
 interface ServiceInterface
 {
-	public function run(string $query, Workflow $workflow);
+    public function run(string $query, Workflow $workflow);
 }

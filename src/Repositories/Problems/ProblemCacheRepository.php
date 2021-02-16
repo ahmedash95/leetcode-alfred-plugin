@@ -8,24 +8,24 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class ProblemCacheRepository extends ProblemRepository
 {
-	/**
-	 * @var CacheInterface
-	 */
-	private $cache;
+    /**
+     * @var CacheInterface
+     */
+    private $cache;
 
-	public function __construct(HttpClientInterface $client, CacheInterface $cache)
-	{
-		parent::__construct($client);
+    public function __construct(HttpClientInterface $client, CacheInterface $cache)
+    {
+        parent::__construct($client);
 
-		$this->cache = $cache;
-	}
+        $this->cache = $cache;
+    }
 
-	public function get(): array
-	{
-		return $this->cache->get('problems', function (ItemInterface $item) {
-			$item->expiresAfter(172800); // 48 hours
+    public function get(): array
+    {
+        return $this->cache->get('problems', function (ItemInterface $item) {
+            $item->expiresAfter(172800); // 48 hours
 
-			return parent::get();
-		});
-	}
+            return parent::get();
+        });
+    }
 }
