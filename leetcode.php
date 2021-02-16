@@ -13,11 +13,11 @@ use Symfony\Component\HttpClient\HttpClient;
 require __DIR__.'/vendor/autoload.php';
 
 if (count($argv) > 0) {
-	array_shift($argv);
+    array_shift($argv);
 }
 $query = strtolower(implode(' ', $argv));
 
-$app = new Application($query, new Workflow);
+$app = new Application($query, new Workflow());
 $app->addService(new ChallengesService());
 $app->addService(new DataStructureService(new DataStructuresCacheRepository(HttpClient::create(), new FilesystemAdapter())));
 $app->addService(new ProblemsService(new ProblemCacheRepository(HttpClient::create(), new FilesystemAdapter())));

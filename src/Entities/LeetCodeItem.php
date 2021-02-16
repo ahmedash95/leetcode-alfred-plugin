@@ -4,67 +4,66 @@ namespace App\Entities;
 
 class LeetCodeItem
 {
-	/**
-	 * @var String
-	 */
-	private $name;
+    /**
+     * @var string
+     */
+    private $name;
 
-	/**
-	 * @var String
-	 */
-	private $slug;
+    /**
+     * @var string
+     */
+    private $slug;
 
-	/**
-	 * @var String
-	 */
-	private $type;
+    /**
+     * @var string
+     */
+    private $type;
 
-	/**
-	 * @return String
-	 */
-	public function getName(): String
-	{
-		return $this->name;
-	}
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
 
-	/**
-	 * @param String $name
-	 */
-	public function setName(String $name): void
-	{
-		$this->name = $name;
-	}
+    /**
+     * @param string $name
+     */
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
 
-	/**
-	 * @return String
-	 */
-	public function getSlug(): String
-	{
-		return $this->slug;
-	}
+    /**
+     * @return string
+     */
+    public function getSlug(): string
+    {
+        return $this->slug;
+    }
 
-	/**
-	 * @param String $slug
-	 */
-	public function setSlug(String $slug): void
-	{
-		$this->slug = $slug;
-	}
+    /**
+     * @param string $slug
+     */
+    public function setSlug(string $slug): void
+    {
+        $this->slug = $slug;
+    }
 
-	/**
-	 * @return String
-	 */
-	public function getType(): String
-	{
-		return $this->type;
-	}
+    /**
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
+    }
 
-	/**
-	 * @param String $type
-	 */
-	public function setType(String $type): void
-	{
-		$this->type = $type;
-	}
-
+    /**
+     * @param string $type
+     */
+    public function setType(string $type): void
+    {
+        $this->type = $type;
+    }
 }

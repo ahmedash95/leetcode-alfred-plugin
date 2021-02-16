@@ -19,15 +19,16 @@ class Application
         $this->workflow = $workflow;
     }
 
-    public function addService(ServiceInterface $service) {
+    public function addService(ServiceInterface $service)
+    {
         $this->services[] = $service;
     }
 
     public function run()
     {
-        foreach($this->services as $service) {
-        	$service->run($this->query, $this->workflow);
-		}
+        foreach ($this->services as $service) {
+            $service->run($this->query, $this->workflow);
+        }
 
         return $this->workflow->output();
     }
