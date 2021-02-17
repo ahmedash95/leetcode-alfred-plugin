@@ -1,6 +1,13 @@
 {
     "require": {
         "joetannenbaum/alfred-workflow": "^0.1.2",
-        "tightenco/collect": "^8.19"
+        "tightenco/collect": "^8.19",
+        "symfony/http-client": "^5.2",
+        "symfony/cache": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
     }
 }
