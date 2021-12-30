@@ -12,10 +12,14 @@ An ultra-fast Leetcode search workflow for [Alfred 3+](https://www.alfredapp.com
 
 ## Usage
 
+#### Getting the daily problem
+the daily problem from leetcode monthly challenge always appear at the top of the list.
+
+#### Search for problems or categories
 Just type `lc` followed by your search query.
 
 ```
-ld <query>
-ld stack
-ld two sum
+lc <query>
+lc stack
+lc two sum
 ```
