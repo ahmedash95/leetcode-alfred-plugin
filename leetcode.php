@@ -5,7 +5,6 @@ use App\Application;
 use App\Repositories\DailyProblem\DailyProblemRepository;
 use App\Repositories\DataStructures\DataStructuresCacheRepository;
 use App\Repositories\Problems\ProblemCacheRepository;
-use App\Services\ChallengesService;
 use App\Services\DailyProblemsService;
 use App\Services\DataStructureService;
 use App\Services\ProblemsService;
